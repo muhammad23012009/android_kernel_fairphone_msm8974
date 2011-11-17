@@ -67,8 +67,6 @@ int create_user_ns(struct cred *new)
 	/* root_user holds a reference to ns, our reference can be dropped */
 	put_user_ns(ns);
 
-	put_user_ns(parent_ns);
-
 	return 0;
 }
 
