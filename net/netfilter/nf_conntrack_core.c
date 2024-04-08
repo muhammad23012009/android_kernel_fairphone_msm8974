@@ -1564,7 +1564,7 @@ static int nf_conntrack_init_net(struct net *net)
 		goto err_stat;
 	}
 
-	net->ct.slabname = kasprintf(GFP_KERNEL, "nf_conntrack_%pK", net);
+	net->ct.slabname = kasprintf(GFP_KERNEL, "nf_conntrack_%p", net);
 	if (!net->ct.slabname) {
 		ret = -ENOMEM;
 		goto err_slabname;
