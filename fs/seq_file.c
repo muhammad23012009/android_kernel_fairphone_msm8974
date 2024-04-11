@@ -9,6 +9,7 @@
 #include <linux/export.h>
 #include <linux/seq_file.h>
 #include <linux/slab.h>
+#include <linux/cred.h>
 
 #include <asm/uaccess.h>
 #include <asm/page.h>
